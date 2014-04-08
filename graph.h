@@ -22,12 +22,14 @@ public:
     void read(bool directed);
     void insert_edge(int x, int y, bool directed);
     void print_graph();
-    void bsf(int root); // traverse the graph setting node p as root
+    void bfs(int root); // traverse the graph setting node p as root
     void findPath(int start, int end);
     void initializeSearch();
+    void processEdge(int x, int y);
     void findConnectedComponents();
     void initializeColor();
     void twoColor();
+
 };
 
 #endif // GRAPH_H
