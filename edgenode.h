@@ -3,7 +3,7 @@
 #include <stddef.h>  //define NULL
 
 enum State{undiscovered = 1, discovered, processed};
-enum Color{white = 0, black};
+enum Color{uncolored = 1, white, black };
 
 class edgenode{
 public:
